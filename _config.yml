@@ -1,6 +1,6 @@
 auto: true
 server: true
-baseurl:
+baseurl: bradgreene.github.io/aarongreene.xyz
 permalink: /:title
 main_title: Aaron Greene
 prose:
