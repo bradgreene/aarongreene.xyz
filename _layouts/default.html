@@ -11,5 +11,30 @@
   <meta name="description" content="">
   <link rel="shortcut icon" href="{{base}}/favicon.ico" />
   <link href="{{base}}/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="{{base}}/circle.skin/circle.player.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+  <script type="text/javascript" src="{{base}}/js/jquery.transform.js"></script>
+  <script type="text/javascript" src="{{base}}/js/jquery.grab.js"></script>
+  <script type="text/javascript" src="{{base}}/js/jquery.jplayer.js"></script>
+  <script type="text/javascript" src="{{base}}/js/mod.csstransforms.min.js"></script>
+  <script type="text/javascript" src="{{base}}/js/circle.player.js"></script>
+    
+		<script type="text/javascript">
+		$(document).ready(function(){
+			var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+			{
+				mp3: "{{page.mp3}}",
+				oga: "{{page.ogg}}"
+			}, {
+				cssSelectorAncestor: "#cp_container_1"
+			});
+		});
+		</script>
 </head>
+
+<body>
+  <div id="limiter">
+    {{content}}
+  </div>
+</body>
 </html>
