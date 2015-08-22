@@ -13,15 +13,16 @@
   <link rel="shortcut icon" href="{{base}}/favicon.ico" />
   <link href="{{base}}/css/style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="{{base}}/circle.skin/circle.player.css">
+        <link href="{{base}}/skin/pink.flag/css/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
   <script type="text/javascript" src="{{base}}/js/jquery.transform.js"></script>
   <script type="text/javascript" src="{{base}}/js/jquery.grab.js"></script>
   <script type="text/javascript" src="{{base}}/js/jquery.jplayer.js"></script>
   <script type="text/javascript" src="{{base}}/js/mod.csstransforms.min.js"></script>
   <script type="text/javascript" src="{{base}}/js/circle.player.js"></script>
-    
+
 		<script type="text/javascript">
-		$(document).ready(function(){
+		$(document).ready(function(){    
 			var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
 			{
 				mp3: "{{page.mp3}}",
@@ -31,6 +32,60 @@
 			});
 		});
 		</script>
+    
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#jquery_jplayer_1").bind($.jPlayer.event.timeupdate, function(event) { 
+                var currentTime = Math.floor(event.jPlayer.status.currentTime)
+                
+                $("#time").text($.jPlayer.convertTime(currentTime));
+            });
+        });
+        </script>
+    
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".cp-play").click(function(){
+                $("#time").fadeIn(300);
+            });
+            $(".cp-circle-control").click(function(){
+                $("#time").fadeIn(300);
+            });
+        });
+        </script>
+    
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $(".download").click(function(){
+                $("#format").fadeIn(500);
+            });
+        });
+        </script>
+    
+    <!--
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#jquery_jplayer_2").jPlayer({
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    mp3: "{{page.mp3}}",
+                    oga: "{{page.ogg}}"
+                });
+            },
+            cssSelectorAncestor: "#jp_container_2",
+            swfPath: "/js",
+            supplied: "mp3, oga",
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true,
+            remainingDuration: true,
+            toggleDuration: true,
+            });
+        });
+        </script>
+-->
+    
 </head>
 
 <body>

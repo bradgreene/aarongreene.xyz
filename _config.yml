@@ -1,6 +1,6 @@
 auto: true
 server: true
-baseurl: /aarongreene.xyz
+baseurl: 
 permalink: /:title
 main_title: Aaron Greene
 prose:
