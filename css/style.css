@@ -44,6 +44,12 @@ body {
   font-size: 1.2em;
 }
 
+@media all and (max-width: 520px) {
+  #home {
+    font-size: 1em;
+  }
+}
+
 #outline {
   width: 200px;
   height: 265px;
@@ -99,4 +105,3 @@ body {
   text-align: center;
   display:none;
 }
-
