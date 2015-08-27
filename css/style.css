@@ -74,6 +74,7 @@ body {
   padding-top:60px;
   margin: 0 auto;
   text-align: center;
+  cursor: default;
   display:none;
   z-index:1;
 }
@@ -87,15 +88,18 @@ body {
 }
 
 .download { 
-  color: #999;
+  color: #222;
   text-decoration: none; 
+  cursor: default;
 }
 
+/*
 .download:hover { 
   color: #222;
   transition: color .2s ease, background .2s ease;
   cursor: pointer;
 }
+*/
 
 #format {
   width: 200px;
@@ -103,5 +107,26 @@ body {
   margin: 0 auto;
   padding-top: 5px;
   text-align: center;
-  display:none;
+  cursor: default;
+  /*display:none;*/
+}
+
+.formatmp3 {
+  margin-right: 8px;
+}
+
+#tracks {
+  width: 200px;
+  text-align: center;
+  margin: -97px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.tracks {
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    margin:0;
 }
