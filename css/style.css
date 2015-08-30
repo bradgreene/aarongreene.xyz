@@ -66,13 +66,31 @@ body {
   }
 }
 
+@media all and (max-width: 375px) {
+  #home {
+    font-size: 0.8em;
+  }
+}
+
+@media all and (max-width: 319px) {
+  #home {
+    font-size: 0.7em;
+  }
+}
+
 #outline {
   width: 100%;
   height: 375px;
-  margin: -187.5px 0 0 -50%;
+  margin: -210px 0 0 -50%;
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+@media all and (max-height: 420px) {
+  #outline {
+    margin: -187.5px 0 0 -50%;
+  }
 }
 
 #description {
