@@ -14,6 +14,22 @@ body {
   margin: 0;
 }
 
+@media all and (max-height: 380px) {
+  body {
+    -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+    zoom: 0.8; /* Other non-webkit browsers */
+    zoom: 80%; /* Webkit browsers */
+  }
+}
+
+@media all and (max-height: 319px) {
+  body {
+    -moz-transform: scale(0.6, 0.6); /* Moz-browsers */
+    zoom: 0.6; /* Other non-webkit browsers */
+    zoom: 60%; /* Webkit browsers */
+  }
+}
+
 .text a { 
   color: #999;
   text-decoration: none; 
@@ -51,9 +67,9 @@ body {
 }
 
 #outline {
-  width: 70%;
+  width: 100%;
   height: 375px;
-  margin: -242.5px 0 0 -35%;
+  margin: -187.5px 0 0 -50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,6 +84,12 @@ body {
 
 #description p {
   margin: 0;
+}
+
+@media all and (max-width: 319px) {
+  #description {
+    font-size: .8em;
+  }
 }
 
 .prototype-wrapper {
