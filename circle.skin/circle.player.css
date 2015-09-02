@@ -111,7 +111,7 @@
 }
 
 .cp-controls .cp-play {
-	background: url("controls.png") 0 0 no-repeat;
+	background: url("controls.png") -50px 0 no-repeat;
 }
 
 .cp-controls .cp-play:hover {
@@ -119,7 +119,7 @@
 }
 
 .cp-controls .cp-pause {
-	background: url("controls.png") 0 -50px no-repeat;
+	background: url("controls.png") -50px -50px no-repeat;
 }
 
 .cp-controls .cp-pause:hover {
