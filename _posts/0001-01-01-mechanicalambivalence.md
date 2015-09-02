@@ -1,14 +1,14 @@
 ---
 layout: music
 category: music
-title: MechanicalAmbivalence
+title: Mechanical Ambivalence
 short: mechanicalambivalence
 aif: "/music/AAGreene_MechanicalAmbivalence.aif"
 mp3: "/music/AAGreene_MechanicalAmbivalence.mp3"
 ogg: "/music/AAGreene_MechanicalAmbivalence.ogg"
 ---
 
-<b>MechanicalAmbivalence</b><br />
+<b>Mechanical Ambivalence</b><br />
 Aaron Greene<br />
 <span class="text"><a href="mailto:hunterlione@gmail.com">hunterlione@gmail.com</a></span><br />
 <br />
