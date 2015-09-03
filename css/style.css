@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-@media all and (max-height: 380px) {
+@media all and (max-height: 420px) {
   body {
     -moz-transform: scale(0.75, 0.75);
     zoom: 0.75;
@@ -27,6 +27,14 @@ body {
     -moz-transform: scale(0.5, 0.5);
     zoom: 0.5;
     zoom: 50%;
+  }
+}
+
+@media all and (max-height: 199px) {
+  body {
+    -moz-transform: scale(0.4, 0.4);
+    zoom: 0.4;
+    zoom: 40%;
   }
 }
 
@@ -107,7 +115,7 @@ body {
 
 @media all and (max-height: 359px) {
   #outline {
-    margin: -220px 0 0 -50%;
+    margin: -200px 0 0 -50%;
   }
 }
 
