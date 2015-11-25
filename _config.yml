@@ -1,5 +1,4 @@
 auto: true
-server: true
 baseurl: 
 permalink: /:title
 main_title: Aaron Greene
