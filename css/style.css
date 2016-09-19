@@ -130,24 +130,40 @@ body {
   margin: 0;
 }
 
-.prototype-wrapper {
-	width:200px;
-	margin: 0 auto;
+#song-wrapper {
+  margin: 0 auto;
+  text-align: center;
 }
 
 #song {
   width: 200px;
   margin: 0 auto;
   text-align: center;
+  display: inline-block;
+}
+    
+.prototype-wrapper {
+	width:200px;
+	margin: 0 auto;
 }
 
-#time {
+#filename {
+  margin: 0 auto;
+  text-align: center;
+  cursor: default;
+  z-index:1;
+  word-wrap: break-word;
+}
+
+#time, #time2, #time3 {
   padding-top:60px;
   margin: 0 auto;
   text-align: center;
   cursor: default;
-  display:none;
   z-index:1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s linear;
 }
 
 #download {

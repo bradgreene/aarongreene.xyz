@@ -10,7 +10,17 @@ layout: default
     {{content}}
   </div>
     
+  <div id="song-wrapper">
+    
   <div id="song">
+    {% if page.short == "blue" %}
+      <div id="filename">{{page.mp3}}</div>
+    {% elsif page.short == "notasoul" %}
+      <div id="filename">{{page.mp3}}</div>
+    {% elsif page.short == "absolutenonsense" %}
+      <div id="filename">{{page.mp3}}</div>
+    {% else %}  
+    {% endif %}
     <div class="prototype-wrapper">
       <div id="jquery_jplayer_1" class="cp-jplayer"></div>
         <div id="cp_container_1" class="cp-container">
@@ -27,9 +37,113 @@ layout: default
             <li><a href="#" class="cp-play" tabindex="1">play</a></li>
             <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
           </ul>
-            <div id="time"></div>
+          <div id="time"></div>
         </div>
     </div>
+  </div>
+      
+  {% if page.short == "blue" %}
+      
+  <div id="song">
+    <div id="filename">{{page.bmp3}}</div>
+    <div class="prototype-wrapper">
+      <div id="jquery_jplayer_2" class="cp-jplayer"></div>
+        <div id="cp_container_2" class="cp-container">
+          <div class="cp-buffer-holder">
+            <div class="cp-buffer-1"></div>
+            <div class="cp-buffer-2"></div>
+          </div>
+          <div class="cp-progress-holder">
+            <div class="cp-progress-1"></div>
+            <div class="cp-progress-2"></div>
+          </div>
+          <div class="cp-circle-control"></div>
+          <ul class="cp-controls">
+            <li><a href="#" class="cp-play" tabindex="1">play</a></li>
+            <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+          </ul>
+          <div id="time2"></div>
+        </div>
+    </div>
+  </div>
+      
+  {% elsif page.short == "notasoul" %}
+      
+  <div id="song">
+    <div id="filename">{{page.bmp3}}</div>
+    <div class="prototype-wrapper">
+      <div id="jquery_jplayer_2" class="cp-jplayer"></div>
+        <div id="cp_container_2" class="cp-container">
+          <div class="cp-buffer-holder">
+            <div class="cp-buffer-1"></div>
+            <div class="cp-buffer-2"></div>
+          </div>
+          <div class="cp-progress-holder">
+            <div class="cp-progress-1"></div>
+            <div class="cp-progress-2"></div>
+          </div>
+          <div class="cp-circle-control"></div>
+          <ul class="cp-controls">
+            <li><a href="#" class="cp-play" tabindex="1">play</a></li>
+            <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+          </ul>
+          <div id="time2"></div>
+        </div>
+    </div>
+  </div>
+      
+  {% elsif page.short == "absolutenonsense" %}
+      
+  <div id="song">
+    <div id="filename">{{page.bmp3}}</div>
+    <div class="prototype-wrapper">
+      <div id="jquery_jplayer_2" class="cp-jplayer"></div>
+        <div id="cp_container_2" class="cp-container">
+          <div class="cp-buffer-holder">
+            <div class="cp-buffer-1"></div>
+            <div class="cp-buffer-2"></div>
+          </div>
+          <div class="cp-progress-holder">
+            <div class="cp-progress-1"></div>
+            <div class="cp-progress-2"></div>
+          </div>
+          <div class="cp-circle-control"></div>
+          <ul class="cp-controls">
+            <li><a href="#" class="cp-play" tabindex="1">play</a></li>
+            <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+          </ul>
+          <div id="time2"></div>
+        </div>
+    </div>
+  </div>
+      
+  <div id="song">
+    <div id="filename">{{page.cmp3}}</div>
+    <div class="prototype-wrapper">
+      <div id="jquery_jplayer_3" class="cp-jplayer"></div>
+        <div id="cp_container_3" class="cp-container">
+          <div class="cp-buffer-holder">
+            <div class="cp-buffer-1"></div>
+            <div class="cp-buffer-2"></div>
+          </div>
+          <div class="cp-progress-holder">
+            <div class="cp-progress-1"></div>
+            <div class="cp-progress-2"></div>
+          </div>
+          <div class="cp-circle-control"></div>
+          <ul class="cp-controls">
+            <li><a href="#" class="cp-play" tabindex="1">play</a></li>
+            <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+          </ul>
+          <div id="time3"></div>
+        </div>
+    </div>
+  </div>
+      
+  {% else %}
+      
+  {% endif %}
+    
   </div>
 
   <div id="download"><span class="download">Download</span></div>
