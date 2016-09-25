@@ -130,16 +130,10 @@ body {
   margin: 0;
 }
 
-#song-wrapper {
-  margin: 0 auto;
-  text-align: center;
-}
-
 #song {
   width: 200px;
   margin: 0 auto;
   text-align: center;
-  display: inline-block;
 }
     
 .prototype-wrapper {

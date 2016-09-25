@@ -35,34 +35,6 @@
                 }
 			});
 		});
-            
-        $(document).ready(function(){    
-			var myCirclePlayer = new CirclePlayer("#jquery_jplayer_2",
-			{
-				mp3: "{{page.bmp3}}",
-				oga: "{{page.bogg}}"
-			},
-            {
-				cssSelectorAncestor: "#cp_container_2",
-                play: function() {
-                    $("#time2").css({"visibility": "visible", "opacity": "1"});
-                }
-			});
-		});
-            
-        $(document).ready(function(){    
-			var myCirclePlayer = new CirclePlayer("#jquery_jplayer_3",
-			{
-				mp3: "{{page.cmp3}}",
-				oga: "{{page.cogg}}"
-			},
-            {
-				cssSelectorAncestor: "#cp_container_3",
-                play: function() {
-                    $("#time3").css({"visibility": "visible", "opacity": "1"});
-                }
-			});
-		});
 		</script>
     
         <script type="text/javascript">
@@ -71,18 +43,6 @@
                 var currentTime = Math.floor(event.jPlayer.status.currentTime)
                 
                 $("#time").text($.jPlayer.convertTime(currentTime));
-            });
-            
-            $("#jquery_jplayer_2").bind($.jPlayer.event.timeupdate, function(event) { 
-                var currentTime = Math.floor(event.jPlayer.status.currentTime)
-                
-                $("#time2").text($.jPlayer.convertTime(currentTime));
-            });
-            
-            $("#jquery_jplayer_3").bind($.jPlayer.event.timeupdate, function(event) { 
-                var currentTime = Math.floor(event.jPlayer.status.currentTime)
-                
-                $("#time3").text($.jPlayer.convertTime(currentTime));
             });
         });
         </script>
