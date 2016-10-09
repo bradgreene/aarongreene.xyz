@@ -9,7 +9,8 @@ body {
   font-weight: normal;
   font-variant: normal;
   color: #999;
-  background-color: #f0f0f0;
+  /*background-color: #f0f0f0;*/
+  background-color: #222;
   position:absolute; top:0; bottom:0; right:0; left:0;
   margin: 0;
 }
@@ -68,7 +69,7 @@ body {
 }
 
 .text a:hover { 
-  color: #222;
+  color: #999;
   transition: color .2s ease, background .2s ease;
 }
 
@@ -175,7 +176,7 @@ body {
 }
 
 .download { 
-  color: #222;
+  color: #666;
   text-decoration: none; 
   cursor: default;
 }
@@ -203,7 +204,6 @@ body {
 }
 
 #tracks {
-  width: 200px;
   text-align: center;
   margin: -165px 0 0 -100px;
   position: absolute;
@@ -212,13 +212,46 @@ body {
 }
 
 .tracks {
-    padding: 0;
-    list-style-type: none;
-    list-style: none;
-    margin:0;
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+  margin:0;
+}
+
+.tracks a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.tracks a:hover { 
+  color: #999;
+  transition: color .2s ease, background .2s ease;
+}
+
+.tracks a:visited { 
+  color: #999;
 }
 
 .tracktype {
-    font-weight: bold;
-    font-style: italic;
+  font-weight: bold;
+  font-style: italic;
 }
+
+.tracks-header {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 26px;
+  color: #f0f0f0;
+}
+
+.email a {
+  color: #999;
+  text-decoration: none;
+}
+
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Alex Brush', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Italianno', cursive;
+font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Lovers Quarrel', cursive;*/
