@@ -63,14 +63,21 @@ body {
   }
 }
 
+@font-face {
+    font-family: Scriptina;
+    src: url({{base}}/fonts/Scriptina-Pro.otf);
+}
+
 .text a { 
   color: #999;
   text-decoration: none; 
 }
 
 .text a:hover { 
-  color: #999;
+  color: #f0f0f0;
   transition: color .2s ease, background .2s ease;
+  -webkit-transition: color .2s ease, background .2s ease;
+  -moz-transition: color .2s ease, background .2s ease;
 }
 
 #limiter {
@@ -203,13 +210,46 @@ body {
   margin-right: 8px;
 }
 
+#tracks-outline {
+  width: 100%;
+  margin: -185px 0 0 -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#tracks-header {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 36px;
+  color: #f0f0f0;
+}
+
+#tracks-header p {
+  margin: 0;
+}
+
+#tracks-header-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 #tracks {
+  margin: 70px auto 0 auto;
+  text-align: center;
+}
+
+/*#tracks {
   text-align: center;
   margin: -165px 0 0 -100px;
   position: absolute;
   top: 50%;
   left: 50%;
-}
+}*/
 
 .tracks {
   padding: 0;
@@ -218,29 +258,25 @@ body {
   margin:0;
 }
 
-.tracks a {
+.tracks a:link {
   color: #f0f0f0;
   text-decoration: none;
 }
 
-.tracks a:hover { 
-  color: #999;
-  transition: color .2s ease, background .2s ease;
+.tracks a:visited { 
+  color: #222;
 }
 
-.tracks a:visited { 
-  color: #999;
+.tracks a:hover { 
+  color: #f0f0f0;
+  transition: color .2s ease, background .2s ease;
+  -webkit-transition: color .2s ease, background .2s ease;
+  -moz-transition: color .2s ease, background .2s ease;
 }
 
 .tracktype {
   font-weight: bold;
   font-style: italic;
-}
-
-.tracks-header {
-  font-family: 'Pinyon Script', cursive;
-  font-size: 26px;
-  color: #f0f0f0;
 }
 
 .email a {
@@ -250,8 +286,11 @@ body {
 
 /*font-family: 'Great Vibes', cursive;
 font-family: 'Pinyon Script', cursive;
+font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Italianno', cursive;
+font-family: 'Tangerine', cursive;
+font-family: 'Herr Von Muellerhoff', cursive;
+
 font-family: 'Alex Brush', cursive;
 font-family: 'Parisienne', cursive;
-font-family: 'Italianno', cursive;
-font-family: 'Monsieur La Doulaise', cursive;
 font-family: 'Lovers Quarrel', cursive;*/
