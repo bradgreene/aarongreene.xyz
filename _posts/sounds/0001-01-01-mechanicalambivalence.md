@@ -4,9 +4,9 @@ category: sounds
 title: Mechanical Ambivalence
 short: mechanicalambivalence
 order: 4
-aif: "/music/AAGreene_MechanicalAmbivalence.aif"
-mp3: "/music/AAGreene_MechanicalAmbivalence.mp3"
-ogg: "/music/AAGreene_MechanicalAmbivalence.ogg"
+aif: "/music/AaronGreene-MechanicalAmbivalence-unsigned.aif"
+mp3: "/music/AaronGreene-MechanicalAmbivalence-unsigned.mp3"
+ogg: "/music/AaronGreene-MechanicalAmbivalence-unsigned.ogg"
 ---
 
 Eerie / Curiosity / Tension & Resolution<br />

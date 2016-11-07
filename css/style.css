@@ -263,9 +263,11 @@ body {
   text-decoration: none;
 }
 
+/*
 .tracks a:visited { 
   color: #222;
 }
+*/
 
 .tracks a:hover { 
   color: #f0f0f0;
