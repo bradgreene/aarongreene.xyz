@@ -282,6 +282,11 @@ body {
   cursor: default;
 }
 
+#email {
+  margin: 60px 0 0 0;
+  text-align: center;
+}
+
 .email a {
   color: #999;
   text-decoration: none;
